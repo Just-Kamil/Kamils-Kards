@@ -32,6 +32,12 @@ return {
                     "Cognitive Behavioral Therapy",
                     "I promise"
                 }
+            },
+            idea_cred1 = {
+                name = "Idea",
+                text = {
+                    "AgileGlass"
+                }
             }
         },
     }
