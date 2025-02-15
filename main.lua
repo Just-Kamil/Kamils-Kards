@@ -54,3 +54,27 @@ SMODS.Atlas {
     px = 32,
     py = 32
 }:register()
+
+local decksToLoad = {}
+local deckPath = modPath .. "/decks"
+
+for i, n in ipairs(love.filesystem.getDirectoryItems(deckPath)) do
+    table.insert(decksToLoad, n)
+end
+
+for i, d in ipairs(decksToLoad) do
+    local deckInfo = assert(SMODS.load_file("decks/" .. d))()
+    d = d:match("^([^.]+)")
+    deckInfo.key = d
+    deckInfo.atlas = d
+    local atlasKey = d
+    deckInfo.pos = {x = 0, y = 0}
+
+    local deck = SMODS.Back(deckInfo)
+    for key, val in ipairs(deck) do
+        if type(val) == "function" then
+            deck[key] = deckInfo[key]
+        end
+    end
+    SMODS.Atlas({key = d, path = "decks/" .. d .. ".png", px = 71, py = 95})
+end

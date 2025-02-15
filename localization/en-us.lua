@@ -36,9 +36,19 @@ return {
             idea_cred1 = {
                 name = "Idea",
                 text = {
-                    "AgileGlass"
+                    "{E:1}AgileGlass{}"
                 }
             }
         },
+        Back = {
+            b_kamkard_gambling_d = {
+                name = "Gambling Deck",
+                text = {
+                    "Start with an",
+                    '{C:tarot}Eternal{}, {C:inactive}Negative{},',
+                    "{C:attention}LET'S GO GAMBLING!!!{} joker"
+                }
+            }
+        }
     }
 }
