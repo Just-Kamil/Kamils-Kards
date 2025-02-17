@@ -1,6 +1,6 @@
 --- STEAMODDED HEADER
 --- MOD_NAME: Kamil's Kards
---- MOD_ID: KAMTKARD
+--- MOD_ID: KAMKARD
 --- MOD_AUTHOR: [Just-Kamil]
 --- MOD_DESCRIPTION: Adds the world's coolest jokers and other?
 --- DEPENDENCIES: [Steamodded>=1.0.0~ALPHA-0812d]
